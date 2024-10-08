@@ -1,5 +1,6 @@
 import {bg_img, bg_item} from "./components/bg_img"
 import products from "./db/products.json"
+import hair_products from "./db/hair_products.json"
 
 export const Site = () => {
     return (
@@ -54,7 +55,7 @@ export const Site = () => {
             </div>
             <div className="bg-white text-center" >
                 <div >
-                    <h1 className="display-1 ">Our Products</h1>
+                    <h1 className="display-1 ">Our Hair</h1>
                 </div>
                 <div className="container-fluid ">
                 <div className=" row justify-content-center gap-2">
@@ -91,13 +92,52 @@ export const Site = () => {
                 </div>
 
             </div>
-            <div className="h-100 text-center d-flex align-items-center" style={bg_img("https://ngratesc.sirv.com/HB%20Luxury/2b52fcca38582c20bbb8f3db032b0477.jpg")}>
+            <div className="h-100 text-center d-flex align-items-center" style={bg_img("https://ngratesc.sirv.com/HB%20Luxury/2b52fcca38582c20bbb8f3db032b0477.jpg", "top")}>
                 <div className="m-3 p-3 text-white bg-warning bg-opacity-75">
                     <h1 className="display-1">The Luxury Line</h1>
                     <p>Indulge in the ultimate hair experience with HB Luxury Hair’s exclusive Luxury Line. Our Luxury Line features the finest selection of 100% natural hair, carefully sourced and handpicked for its superior quality. Each strand is silky, soft, and tangle-free, offering unmatched durability and shine that lasts. Whether you desire long, flowing waves or sleek, straight styles, our Luxury Line is designed to provide a flawless finish that elevates your look.
                    </p>
                    <button className="btn btn-outline-light">Get The Luxury Line Set</button>
                 </div>
+            </div>
+            <div className="bg-white text-center" >
+                <div >
+                    <h1 className="display-1 ">Our Hair Products</h1>
+                </div>
+                <div className="container-fluid ">
+                <div className=" row justify-content-center gap-2">
+                    {
+                        hair_products.map((i,index)=>{
+                            return(
+                                <div className="col-md-4 mb-2" key={index}>
+                                <div className=" d-flex gap-2 flex-row mt-5" >
+                                    <div className="img-fluid " style={{...bg_item(i.img),width:'7vw'}}>
+                                      
+                                    </div>
+                                    <div className="text-start w-100">
+                                        <h5>{i.item}</h5>
+                                        <div className="d-flex flex-row justify-content-between">
+                                            <span><small>{i.size} inch</small></span>
+                                            <span className="text-success"><small>${i.amount.toFixed(2)}</small></span>
+                                        </div>
+
+
+                                    </div>
+                                   
+                                </div>
+                                <div className="mt-2">
+                                    <button className="btn btn-outline-dark w-100">View</button>
+                                </div>
+                                </div>
+                            )
+                        })
+                    }
+                </div>
+                </div>
+                <div className="mt-3 mb-5 pb-5">
+                    <button className=" btn btn-outline-warning">View More</button>
+                </div>
+
             </div>
         
 

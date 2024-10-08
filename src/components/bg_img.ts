@@ -1,9 +1,9 @@
-export const bg_img=(img:string)=>{
+export const bg_img=(img:string, position?:string)=>{
     return(
         {
             backgroundImage: `url(${img})`,
             backgroundSize: 'cover',
-            backgroundPosition: 'center',
+            backgroundPosition: (position?position:'center'),
             backgroundRepeat: 'no-repeat',
             backgroundAttachment: 'fixed'
         }
