@@ -47,7 +47,7 @@ export const Site = () => {
                 <div className="h-100  p-5 text-white d-flex align-items-center justify-content-center">
                     <div className="purple_bg p-5">
                     <h1 className="display-1">Natural Looking</h1>
-                    <p>At <span className="text-warning glow">HB Luxury Hair</span>, we believe that every woman deserves to look and feel her best. That’s why we offer only the finest 100% Brazilian weaves, premium braids, and a range of high-quality hair products designed to elevate your beauty routine. Whether you're looking for sleek, natural, or voluminous hair, our luxurious collections provide versatility and unmatched quality.</p>
+                    <p>At <span className="text-warning glow">HB Luxury Hair</span>, we believe that every woman deserves to look and feel her best. That’s why we offer only the finest 100% natural hair, and a range of high-quality hair products designed to elevate your beauty routine. Whether you're looking for sleek, natural, or voluminous hair, our luxurious collections provide versatility and unmatched quality.</p>
                     <button className="btn btn-outline-warning">View Catalogue</button>
                     </div>
                 </div>
