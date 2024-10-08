@@ -118,7 +118,6 @@ export const Site = () => {
                                     <div className="text-start w-100">
                                         <h5>{i.item}</h5>
                                         <div className="d-flex flex-row justify-content-between">
-                                            <span><small>{i.size} inch</small></span>
                                             <span className="text-success"><small>${i.amount.toFixed(2)}</small></span>
                                         </div>
 
