@@ -1,0 +1,56 @@
+[
+    {
+        "item":"Full Frontal Waterwave",
+        "size":"22",
+        "img":"https://ngratesc.sirv.com/HB%20Luxury/frontal.jpg",
+        "amount":140.00
+    },
+    {
+        "item":"Full Frontal Bob",
+        "size":"16",
+        "img":"https://ngratesc.sirv.com/HB%20Luxury/bobfrontal.jpg",
+        "amount":100.00
+    },
+    {
+        "item":"Blonde Body Wave",
+        "size":"22",
+        "img":"https://ngratesc.sirv.com/HB%20Luxury/blonddw.webp",
+        "amount":165.00
+    },
+    {
+        "item":"Waterwave Fringe",
+        "size":"14",
+        "img":"https://ngratesc.sirv.com/HB%20Luxury/wvfringe.png",
+        "amount":65.00
+    },
+    {
+        "item":"Marble Fringe",
+        "size":"16",
+        "img":"https://ngratesc.sirv.com/HB%20Luxury/marblewv.jpg",
+        "amount":55.00
+    },
+    {
+        "item":"Maroon Fringe",
+        "size":"8",
+        "img":"https://ngratesc.sirv.com/HB%20Luxury/marronfringe.jpg",
+        "amount":28.00
+    },
+    {
+        "item":"Straight Edge Bob",
+        "size":"10",
+        "img":"https://ngratesc.sirv.com/HB%20Luxury/sebob.webp",
+        "amount":60.00
+    },
+    {
+        "item":"Burnt Orange Bob",
+        "size":"10",
+        "img":"https://ngratesc.sirv.com/HB%20Luxury/images.jpeg",
+        "amount":50.00
+    },
+    {
+        "item":"Blonde Bob",
+        "size":"12",
+        "img":"https://ngratesc.sirv.com/HB%20Luxury/blobdebb.jpeg",
+        "amount":60.00
+    }
+]

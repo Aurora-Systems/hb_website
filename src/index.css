@@ -1,0 +1,62 @@
+@font-face {
+  font-family: lovely;
+  src: url("./assets/font.otf");
+}
+
+@font-face {
+  font-family: gi;
+  src: url("./assets/gi.otf");
+}
+
+body{
+  font-family: gi;
+  background-color: black;
+}
+
+h1{
+  font-family: lovely !important;
+
+}
+
+button{
+  min-width: 150px;
+  border-radius: 0px !important;
+}
+
+.glow {
+  color: white;
+  text-shadow: rgb(153, 0, 255) 0px 0px 150px;
+}
+
+.btn_gen{
+  border-radius: 0px;
+  background-color: rgb(68, 0, 68);
+  min-width: 150px;
+}
+
+.btn_gen:hover{
+  border-radius: 0px;
+  background-color: rgb(153, 143, 0);
+  min-width: 150px;
+}
+
+.wrapper{
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  perspective: 10px;
+
+}
+
+
+.purple_border:hover{
+  border: 1px solid purple;
+}
+
+.gold_border:hover{
+  border: 1px solid gold;
+}
+
+.purple_bg{
+  background-color: rgba(61, 0, 61, 0.616);
+}
