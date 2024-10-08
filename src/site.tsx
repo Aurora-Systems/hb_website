@@ -65,7 +65,7 @@ export const Site = () => {
                             return(
                                 <div className="col-md-3 mb-2" key={index}>
                                 <div className=" d-flex gap-2 flex-row mt-5" >
-                                    <div className="img-fluid " style={{...bg_item(i.img),width:'7vw'}}>
+                                    <div className="img-fluid " style={{...bg_item(i.img),width:'15vw'}}>
                                       
                                     </div>
                                     <div className="text-start w-100">
@@ -112,7 +112,7 @@ export const Site = () => {
                             return(
                                 <div className="col-md-4 mb-2" key={index}>
                                 <div className=" d-flex gap-2 flex-row mt-5" >
-                                    <div className="img-fluid " style={{...bg_item(i.img),width:'7vw'}}>
+                                    <div className="img-fluid " style={{...bg_item(i.img),width:'10vw'}}>
                                       
                                     </div>
                                     <div className="text-start w-100">
@@ -207,7 +207,7 @@ export const Site = () => {
                         </div>
 
                     </div>
-                    <div className="col-sm d-flex justify-content-md-center justify-content-center align-items-center">
+                    <div className="col-sm d-flex justify-content-md-center justify-content-center align-items-center mb-5">
                         <div className="d-flex flex-column text-md-start text-center">
 
                         <p>Our Socials</p>
