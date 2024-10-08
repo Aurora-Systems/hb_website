@@ -60,3 +60,7 @@ button{
 .purple_bg{
   background-color: rgba(61, 0, 61, 0.616);
 }
+
+.sfw-theme-custom{
+  font-family: gi !important;
+}

@@ -1,11 +1,12 @@
 import {bg_img, bg_item} from "./components/bg_img"
 import products from "./db/products.json"
 import hair_products from "./db/hair_products.json"
+import SubstackFeed from "./components/blog"
 
 export const Site = () => {
     return (
         <div className="wrapper">
-            <div className="h-100 text-center d-flex justify-content-center align-items-center " style={bg_img("https://ngratesc.sirv.com/HB%20Luxury/909.jpg")}>
+            <div className="h-100 text-center d-flex justify-content-center align-items-center " style={bg_img("https://ngratesc.sirv.com/HB%20Luxury/2859.jpg")}>
                 <div>
 
                     <h1 className="display-1 glow  text-white text-shadow">HB LUXURY HAIR</h1>
@@ -92,7 +93,7 @@ export const Site = () => {
                 </div>
 
             </div>
-            <div className="h-100 text-center d-flex align-items-center" style={bg_img("https://ngratesc.sirv.com/HB%20Luxury/2b52fcca38582c20bbb8f3db032b0477.jpg", "top")}>
+            <div className="h-100 text-center d-flex align-items-center" style={bg_img("https://ngratesc.sirv.com/HB%20Luxury/909.jpg", "top")}>
                 <div className="m-3 p-3 text-white bg-warning bg-opacity-75">
                     <h1 className="display-1">The Luxury Line</h1>
                     <p>Indulge in the ultimate hair experience with HB Luxury Hair’s exclusive Luxury Line. Our Luxury Line features the finest selection of 100% natural hair, carefully sourced and handpicked for its superior quality. Each strand is silky, soft, and tangle-free, offering unmatched durability and shine that lasts. Whether you desire long, flowing waves or sleek, straight styles, our Luxury Line is designed to provide a flawless finish that elevates your look.
@@ -139,6 +140,98 @@ export const Site = () => {
                 </div>
 
             </div>
+            <div className="h-100" style={bg_img("https://ngratesc.sirv.com/HB%20Luxury/derrick-payton-9eq4KD3I4uw-unsplash.jpg")}>
+
+            </div>
+            <div  className="bg-white ">
+                 <div className="mt-5">
+                    <h1 className="display-1  text-center">Blog</h1>   
+                    <div className="mt-4">
+                    <SubstackFeed/>
+                    </div> 
+                </div>   
+            </div>
+            <div className="row ">
+                    <div className="col-sm  w-100 p-3 text-white">
+                        <form>
+                        <div>
+                            <h1 className="display-1 text-md-start text-center">Contact Us</h1>
+                        </div>
+                        <div className="row ">
+                            <div className="col-sm mb-2">
+                                <span>First Name</span>
+                                <input type="" required className=" form-control rounded-0"/>
+                            </div>
+                            <div className="col-sm mb-2">
+                                <span>Last Name</span>
+                                <input type="" required className="form-control rounded-0"/>
+                            </div>
+                        </div>
+                        <div className="row ">
+                            <div className="col-sm mb-2">
+                                <span>Email</span>
+                                <input type="" required className="form-control rounded-0"/>
+                            </div>
+                            <div className="col-sm mb-2">
+                                <span>Contact Number</span>
+                                <input type="" required className="form-control rounded-0"/>
+                            </div>
+                        </div>
+                        <div className="row ">
+                            <div className="col-sm mb-2">
+                                <span>Your Message</span>
+                                <textarea required className="form-control rounded-0"/>
+                            </div>
+                           
+                        </div>
+                        <div>
+                            <button className="btn btn-outline-light w-100">Send</button>
+                        </div>
+                        </form>
+                    </div>
+                    <div className="col-sm" style={bg_img("https://ngratesc.sirv.com/HB%20Luxury/2b52fcca38582c20bbb8f3db032b0477.jpg", "top")}>
+
+                    </div>
+            </div>
+            <div className="container-fluid w-100 ">
+
+            <div className="row text-white d-flex justify-content-md-start justify-content-center">
+                 
+                    <div className="col-sm d-flex justify-content-md-center justify-content-center align-items-center mb-5">
+                        <div className="d-flex flex-column text-md-start text-center">
+
+                        <p>Contact Us</p>
+                        <a href="">+263 78 355 8645</a>
+                        <a href="">+263 71 774 3355</a>
+                        <a href="">info@hbluxuryhair.co.zw</a>
+                        </div>
+
+                    </div>
+                    <div className="col-sm d-flex justify-content-md-center justify-content-center align-items-center">
+                        <div className="d-flex flex-column text-md-start text-center">
+
+                        <p>Our Socials</p>
+                        <a href="">Facebook</a>
+                        <a href="">Instgram</a>
+                        <a href="">Pinterest</a>
+                        </div>
+
+                    </div>
+                    <div className="col-sm d-flex justify-content-md-center justify-content-center">
+                        <img src="https://ngratesc.sirv.com/HB%20Luxury/hb_long_logo.png" className="img-fluid"/>
+                    </div>
+                   
+                    <div className="col-sm d-flex justify-content-md-center justify-content-center align-items-center">
+                        <div className="rounded">
+
+                        <iframe src="https://hbluxuryhair.substack.com/embed" className="bg-black rounded img-fluid"   frameBorder="0" scrolling="no"></iframe>
+                        </div>
+
+                    </div>
+                   
+            </div>
+            </div>
+
         
 
         </div>
