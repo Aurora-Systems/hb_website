@@ -10,7 +10,7 @@ export const Site = () => {
                 <div>
 
                     <h1 className="display-1 glow  text-white text-shadow">HB LUXURY HAIR</h1>
-                    <button className="btn btn-outline-light  rounded-0">Shop Now</button>
+                    <a href="#shop"><button className="btn btn-outline-light  rounded-0">Shop Now</button></a>
                 </div>
 
             </div>
@@ -58,7 +58,7 @@ export const Site = () => {
                 <div >
                     <h1 className="display-1 ">Our Hair</h1>
                 </div>
-                <div className="container-fluid ">
+                <div className="container-fluid " id="shop">
                 <div className=" row justify-content-center gap-2">
                     {
                         products.map((i,index)=>{
