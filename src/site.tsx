@@ -200,9 +200,9 @@ export const Site = () => {
                         <div className="d-flex flex-column text-md-start text-center">
 
                         <p>Contact Us</p>
-                        <a href="">+263 78 355 8645</a>
-                        <a href="">+263 71 774 3355</a>
-                        <a href="">info@hbluxuryhair.co.zw</a>
+                        <a href="tel:+263783558645">+263 78 355 8645</a>
+                        <a href="tel:+263717743355">+263 71 774 3355</a>
+                        <a href="mailto:info@hbluxuryhair.co.zw">info@hbluxuryhair.co.zw</a>
                         </div>
 
                     </div>
@@ -210,7 +210,7 @@ export const Site = () => {
                         <div className="d-flex flex-column text-md-start text-center">
 
                         <p>Our Socials</p>
-                        <a href="">Facebook</a>
+                        <a href="https://www.facebook.com/hbluxuryhairzw" target="_blank">Facebook</a>
                         <a href="">Instgram</a>
                         <a href="">Pinterest</a>
                         </div>
