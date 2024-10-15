@@ -2,6 +2,7 @@ import {bg_img, bg_item} from "./components/bg_img"
 import products from "./db/products.json"
 import hair_products from "./db/hair_products.json"
 import SubstackFeed from "./components/blog"
+import { w_number } from "./components/whatsapp_number"
 
 export const Site = () => {
     return (
@@ -25,7 +26,7 @@ export const Site = () => {
                                 <p>Crafted to perfection, our Brazilian weaves are soft, natural-looking, and made to last. They blend seamlessly with all hair types, offering you the ultimate styling flexibility.
 
                                     Braids: Our collection of braids of</p>
-                                <button className="btn btn-outline-warning">View</button>
+                                <a href="#shop"><button className="btn btn-outline-warning" >View</button></a>
                             </div>
 
                         </div>
@@ -38,7 +39,7 @@ export const Site = () => {
                             <div className="text-center">
                                 <h1 className="text-center">Hair Products</h1>
                                 <p>Maintain the health and vibrancy of your hair with our specially curated hair care line. From nourishing oils to styling essentials, we’ve got everything you need to keep your hair looking its best.</p>
-                                <button className="btn btn-outline-light">View</button>
+                                <a href="#hair_products"><button className="btn btn-outline-light">View</button></a>
                             </div>
                         </div>
                     </div>
@@ -50,7 +51,7 @@ export const Site = () => {
                     <div className="purple_bg p-5">
                     <h1 className="display-1">Natural Looking</h1>
                     <p>At <span className="text-warning glow">HB Luxury Hair</span>, we believe that every woman deserves to look and feel her best. That’s why we offer only the finest 100% natural hair, and a range of high-quality hair products designed to elevate your beauty routine. Whether you're looking for sleek, natural, or voluminous hair, our luxurious collections provide versatility and unmatched quality.</p>
-                    <button className="btn btn-outline-warning">View Catalogue</button>
+                    <a href={`https://wa.me/c/${w_number}`} target="_blank"><button className="btn btn-outline-warning">View Catalogue</button></a>
                     </div>
                 </div>
             </div>
@@ -80,7 +81,7 @@ export const Site = () => {
                                    
                                 </div>
                                 <div className="mt-2">
-                                    <button className="btn btn-outline-dark w-100">View</button>
+                                    <a href={`https://wa.me/${w_number}?text=Good day can i get more information on ${i.item}`} target="_blank"><button className="btn btn-outline-dark w-100">View</button></a>
                                 </div>
                                 </div>
                             )
@@ -89,7 +90,7 @@ export const Site = () => {
                 </div>
                 </div>
                 <div className="mt-3 mb-5 pb-5">
-                    <button className=" btn btn-outline-warning">View More</button>
+                    <a href={`https://wa.me/c/${w_number}`} target="_blank"><button className=" btn btn-outline-warning">View More</button></a>
                 </div>
 
             </div>
@@ -98,10 +99,9 @@ export const Site = () => {
                     <h1 className="display-1">The Luxury Line</h1>
                     <p>Indulge in the ultimate hair experience with HB Luxury Hair’s exclusive Luxury Line. Our Luxury Line features the finest selection of 100% natural hair, carefully sourced and handpicked for its superior quality. Each strand is silky, soft, and tangle-free, offering unmatched durability and shine that lasts. Whether you desire long, flowing waves or sleek, straight styles, our Luxury Line is designed to provide a flawless finish that elevates your look.
                    </p>
-                   <button className="btn btn-outline-light">Get The Luxury Line Set</button>
                 </div>
             </div>
-            <div className="bg-white text-center" >
+            <div className="bg-white text-center" id="hair_products">
                 <div >
                     <h1 className="display-1 ">Our Hair Products</h1>
                 </div>
@@ -126,7 +126,7 @@ export const Site = () => {
                                    
                                 </div>
                                 <div className="mt-2">
-                                    <button className="btn btn-outline-dark w-100">View</button>
+                                    <a href={`https://wa.me/${w_number}?text=Good day can I get more information on ${i.item}`} target="_blank"><button className="btn btn-outline-dark w-100">View</button></a>
                                 </div>
                                 </div>
                             )
@@ -135,7 +135,7 @@ export const Site = () => {
                 </div>
                 </div>
                 <div className="mt-3 mb-5 pb-5">
-                    <button className=" btn btn-outline-warning">View More</button>
+                    <a href={`https://wa.me/c/${w_number}`} target="_blank"><button className=" btn btn-outline-warning">View More</button></a>
                 </div>
 
             </div>
