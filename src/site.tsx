@@ -240,8 +240,8 @@ export const Site = () => {
 
                         <p>Our Socials</p>
                         <a href="https://www.facebook.com/hbluxuryhairzw" target="_blank">Facebook</a>
-                        <a href="">Instgram</a>
-                        <a href="">Pinterest</a>
+                        {/* <a href="">Instgram</a> */}
+                        <a href="https://www.pinterest.com/hbluxuryhair/" target="_blank">Pinterest</a>
                         </div>
 
                     </div>
