@@ -3,8 +3,37 @@ import products from "./db/products.json"
 import hair_products from "./db/hair_products.json"
 import SubstackFeed from "./components/blog"
 import { w_number } from "./components/whatsapp_number"
+import { FormEvent, useRef, useState } from "react"
+import emailjs from "@emailjs/browser"
+import {toast} from "react-toastify"
 
 export const Site = () => {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    const form_ref:any = useRef(null)
+    const [loading,set_loading] = useState<boolean>(false)
+    const handle_submit=(e:FormEvent)=>{
+        e.preventDefault()
+        set_loading(true)
+
+        emailjs
+      .sendForm('service_yrdimda', 'template_dptfj1n', form_ref.current, {
+        publicKey: 'UiTheRT3ZQsrbXGtJ',
+      })
+      .then(
+        () => {
+          toast('Message sent!');
+            form_ref.current.reset(); // Reset the form using ref
+          
+        },
+        (error) => {
+            console.log(error)
+          toast('Failed to send message please try again later');
+        },
+      ).finally(()=>{
+        set_loading(false)
+      })
+    }
+   
     return (
         <div className="wrapper">
             <div className="h-100 text-center d-flex justify-content-center align-items-center " style={bg_img("https://ngratesc.sirv.com/HB%20Luxury/2859.jpg")}>
@@ -152,39 +181,39 @@ export const Site = () => {
             </div>
             <div className="row ">
                     <div className="col-sm  w-100 p-3 text-white">
-                        <form>
+                        <form ref={form_ref} onSubmit={handle_submit}>
                         <div>
                             <h1 className="display-1 text-md-start text-center">Contact Us</h1>
                         </div>
                         <div className="row ">
                             <div className="col-sm mb-2">
                                 <span>First Name</span>
-                                <input type="" required className=" form-control rounded-0"/>
+                                <input type="text" name="first_bname" required className=" form-control rounded-0"/>
                             </div>
                             <div className="col-sm mb-2">
                                 <span>Last Name</span>
-                                <input type="" required className="form-control rounded-0"/>
+                                <input type="" name="last_n" required className="form-control rounded-0"/>
                             </div>
                         </div>
                         <div className="row ">
                             <div className="col-sm mb-2">
                                 <span>Email</span>
-                                <input type="" required className="form-control rounded-0"/>
+                                <input type="email" name="email" required className="form-control rounded-0"/>
                             </div>
                             <div className="col-sm mb-2">
                                 <span>Contact Number</span>
-                                <input type="" required className="form-control rounded-0"/>
+                                <input type="tel" name="contact_number" required className="form-control rounded-0"/>
                             </div>
                         </div>
                         <div className="row ">
                             <div className="col-sm mb-2">
                                 <span>Your Message</span>
-                                <textarea required className="form-control rounded-0"/>
+                                <textarea required name="message" className="form-control rounded-0"/>
                             </div>
                            
                         </div>
                         <div>
-                            <button className="btn btn-outline-light w-100">Send</button>
+                            <button className="btn btn-outline-light w-100" disabled={loading}>Send</button>
                         </div>
                         </form>
                     </div>
