@@ -3,7 +3,7 @@ import products from "./db/products.json"
 import hair_products from "./db/hair_products.json"
 import SubstackFeed from "./components/blog"
 import { w_number } from "./components/whatsapp_number"
-import { FormEvent, useRef, useState } from "react"
+import { FormEvent, useEffect, useRef, useState } from "react"
 import emailjs from "@emailjs/browser"
 import {toast} from "react-toastify"
 
@@ -34,13 +34,14 @@ export const Site = () => {
       })
     }
    
+   
     return (
         <div className="wrapper">
             <div className="h-100 text-center d-flex justify-content-center align-items-center " style={bg_img("https://ngratesc.sirv.com/HB%20Luxury/2859.jpg")}>
                 <div>
 
                     <h1 className="display-1 glow  text-white text-shadow">HB LUXURY HAIR</h1>
-                    <a href="#shop"><button className="btn btn-outline-light  rounded-0">Shop Now</button></a>
+                    <a href="##shop"><button className="btn btn-outline-light  rounded-0">Shop Now</button></a>
                 </div>
 
             </div>
@@ -55,7 +56,7 @@ export const Site = () => {
                                 <p>Crafted to perfection, our Brazilian weaves are soft, natural-looking, and made to last. They blend seamlessly with all hair types, offering you the ultimate styling flexibility.
 
                                     Braids: Our collection of braids of</p>
-                                <a href="#shop"><button className="btn btn-outline-warning" >View</button></a>
+                                <a href="##shop"><button className="btn btn-outline-warning" >View</button></a>
                             </div>
 
                         </div>
@@ -68,7 +69,7 @@ export const Site = () => {
                             <div className="text-center">
                                 <h1 className="text-center">Hair Products</h1>
                                 <p>Maintain the health and vibrancy of your hair with our specially curated hair care line. From nourishing oils to styling essentials, we’ve got everything you need to keep your hair looking its best.</p>
-                                <a href="#hair_products"><button className="btn btn-outline-light">View</button></a>
+                                <a href="##hair_products"><button className="btn btn-outline-light">View</button></a>
                             </div>
                         </div>
                     </div>
@@ -88,7 +89,7 @@ export const Site = () => {
                 <div >
                     <h1 className="display-1 ">Our Hair</h1>
                 </div>
-                <div className="container-fluid " id="shop">
+                <div className="container-fluid " id="#shop">
                 <div className=" row justify-content-center gap-2">
                     {
                         products.map((i,index)=>{
@@ -130,7 +131,7 @@ export const Site = () => {
                    </p>
                 </div>
             </div>
-            <div className="bg-white text-center" id="hair_products">
+            <div className="bg-white text-center" id="#hair_products">
                 <div >
                     <h1 className="display-1 ">Our Hair Products</h1>
                 </div>
