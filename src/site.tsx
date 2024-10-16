@@ -6,8 +6,9 @@ import { w_number } from "./components/whatsapp_number"
 import { FormEvent, useEffect, useRef, useState } from "react"
 import emailjs from "@emailjs/browser"
 import {toast} from "react-toastify"
-
+import {Link, useLocation} from "react-router-dom"
 export const Site = () => {
+    const {hash} = useLocation()
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const form_ref:any = useRef(null)
     const [loading,set_loading] = useState<boolean>(false)
@@ -33,7 +34,17 @@ export const Site = () => {
         set_loading(false)
       })
     }
-   
+    
+    useEffect(() => {
+        if (hash) {
+          const element = document.querySelector(hash);
+          if (element) {
+            element.scrollIntoView({ behavior: 'smooth' });
+          }
+        }
+      }, [hash]);
+    
+    
    
     return (
         <div className="wrapper">
@@ -41,7 +52,7 @@ export const Site = () => {
                 <div>
 
                     <h1 className="display-1 glow  text-white text-shadow">HB LUXURY HAIR</h1>
-                    <a href="##shop"><button className="btn btn-outline-light  rounded-0">Shop Now</button></a>
+                    <Link to="#shop"><button className="btn btn-outline-light  rounded-0">Shop Now</button></Link>
                 </div>
 
             </div>
@@ -56,7 +67,7 @@ export const Site = () => {
                                 <p>Crafted to perfection, our Brazilian weaves are soft, natural-looking, and made to last. They blend seamlessly with all hair types, offering you the ultimate styling flexibility.
 
                                     Braids: Our collection of braids of</p>
-                                <a href="##shop"><button className="btn btn-outline-warning" >View</button></a>
+                                <Link to="#shop"><button className="btn btn-outline-warning" >View</button></Link>
                             </div>
 
                         </div>
@@ -69,7 +80,7 @@ export const Site = () => {
                             <div className="text-center">
                                 <h1 className="text-center">Hair Products</h1>
                                 <p>Maintain the health and vibrancy of your hair with our specially curated hair care line. From nourishing oils to styling essentials, we’ve got everything you need to keep your hair looking its best.</p>
-                                <a href="##hair_products"><button className="btn btn-outline-light">View</button></a>
+                                <Link to="#hair_products"><button className="btn btn-outline-light">View</button></Link>
                             </div>
                         </div>
                     </div>
@@ -89,7 +100,7 @@ export const Site = () => {
                 <div >
                     <h1 className="display-1 ">Our Hair</h1>
                 </div>
-                <div className="container-fluid " id="#shop">
+                <div className="container-fluid " id="shop">
                 <div className=" row justify-content-center gap-2">
                     {
                         products.map((i,index)=>{
@@ -131,7 +142,7 @@ export const Site = () => {
                    </p>
                 </div>
             </div>
-            <div className="bg-white text-center" id="#hair_products">
+            <div className="bg-white text-center" id="hair_products">
                 <div >
                     <h1 className="display-1 ">Our Hair Products</h1>
                 </div>
