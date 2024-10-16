@@ -16,8 +16,8 @@ export const Site = () => {
         set_loading(true)
 
         emailjs
-      .sendForm('service_yrdimda', 'template_dptfj1n', form_ref.current, {
-        publicKey: 'UiTheRT3ZQsrbXGtJ',
+      .sendForm('service_9dejpms', 'template_c0xhp9n', form_ref.current, {
+        publicKey: 'VcDhZxEE1QrWBJooz',
       })
       .then(
         () => {
